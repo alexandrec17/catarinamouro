@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .card.gallery-img, #contactPic {
+    margin-top: 0.75em;
+    /*box-shadow: inset 2px;*/
+    border-radius: 0.5em;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+    border: none;
+  }
+  
+  .card.gallery-img > img {
+    border-radius: 0.5em;
+  }
+
+  a#submit {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+  }
+
+  .row [class*="col-"]{
+    padding:0.5em 0.5em;
+  }
+  
+  .row .col-sm-4>img {
+    max-width:100%; 
+    max-height:100%; 
+    object-fit: cover;
+    position: center;
+  }
+
+  .col-sm-4 img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .col-sm-4 img:hover {
+      opacity: 0.7;
+  }
+
+
+  .row.limit [class*="col-"]{
+    max-height:13em;
+    overflow:hidden;
+  }
+
+  .row.limit [class*="col-"] > img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .container.limit > * {
+    height: 5em;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .row.limit [class*="col-"] > img {
+      height: 10em;
+      width: 10em;
+    }
+  }

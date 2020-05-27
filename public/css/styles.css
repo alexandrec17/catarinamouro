@@ -1,0 +1,88 @@
+  :root {
+    /*--primary-color: #E0BB2F;*/
+    /*--primary-color: rgb(161, 134, 35);
+    --primary-color: rgb(156, 87, 27, 0.8);*/ 
+    --primary-color: rgba(199, 138, 18, 0.8);
+    --overlay-color: rgba(255, 255, 255, 0.829);
+    --menu-speed: 0.75s;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'open sans',sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  ul  {
+    list-style: none;
+  }
+
+  #home {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+
+    background-image: url('../media/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  #gallery, #repertoire, #contact  {
+    margin-top: 3em;
+  }
+
+  #repertoire h2, #gallery h2, #contact h2 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-family: 'open sans',sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-bottom: 1em;
+  }
+  
+  #gallery h2 {
+    font-size: 3rem;
+    margin-top: 1.5em;
+  }
+  
+  div.page {
+    min-height:40em;
+  }
+
+  #biography {
+    margin-top: 2em;
+    text-align: center;
+  }
+  
+  #biography > h2 {
+    margin-top: 2em;
+  }
+
+  #biography > p {
+    margin-top: 1em;
+  }
+
+  .fa-chevron-up {
+    background-color: rgba(224, 186, 47, 0.527);
+    color: white;
+    padding: 0.6em 1.1em 1.75em;
+    
+  }
+
+  @media screen and (max-width: 599px){
+    #imgContact {
+      max-width: 140%;
+    }
+  }
