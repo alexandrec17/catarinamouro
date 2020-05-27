@@ -14,10 +14,12 @@ function openModal (currentElem) {
   var captionText = document.getElementById('caption')
 
   removePortraitAndLandscapeStyles(modalImg)
+  captionText.classList.remove('landscape')
   if (currentElem.classList.contains('portrait')) {
     modalImg.classList.add('portrait')
   } else {
     modalImg.classList.add('landscape')
+    captionText.classList.add('landscape')
   }
   modal.style.display = 'block'
 
