@@ -110,6 +110,10 @@
     top: 20%;
   }
 
+  .modal-content.portrait {
+    max-height: 65vh;
+  }
+
   #caption.landscape {
     margin-top: 14em;
   }
@@ -119,5 +123,17 @@
   .modal-content.portrait {
     height: 90%;
     max-width: 35vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-height: 800px){
+  .modal-content.portrait {
+    max-width: 50vh;
+  }
+}
+
+@media screen and (min-height: 1000px){
+  .modal-content.portrait {
+    max-width: 65vh;
   }
 }
