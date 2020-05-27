@@ -39,9 +39,6 @@
     background-repeat: no-repeat;
   }
 
-  #gallery, #repertoire, #contact  {
-    margin-top: 3em;
-  }
 
   #repertoire h2, #gallery h2, #contact h2 {
     text-transform: uppercase;
@@ -54,7 +51,6 @@
   
   #gallery h2 {
     font-size: 3rem;
-    margin-top: 1.5em;
   }
   
   div.page {
@@ -84,5 +80,25 @@
   @media screen and (max-width: 599px){
     #imgContact {
       max-width: 140%;
+    }
+  }
+
+  @media screen and (max-width: 768px){    
+    #repertoire, #contact  {
+      padding-top: 5em;
+    }
+
+    #gallery {
+      padding-top: 8em;
+    }
+  }
+
+  @media screen and (max-width: 768px) and (min-height: 900px){    
+    #repertoire, #contact  {
+      padding-top: 7em;
+    }
+
+    #gallery {
+      padding-top: 10em;
     }
   }

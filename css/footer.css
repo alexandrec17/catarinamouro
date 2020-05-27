@@ -92,14 +92,15 @@ footer {
   }
 }
 
-@media screen and (min-height: 800px) {
+/*@media screen and (min-height: 800px) {
   #footer {
     min-height: calc(100vh - 45em);
   }
-}
+}*/
 
 @media screen and (min-height: 1000px) {
   #footer {
-    min-height: calc(100vh - 30em);
+    /*min-height: calc(100vh - 30em);*/
+    margin-top: 16.5em;
   }
 }
