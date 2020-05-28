@@ -53,7 +53,8 @@
   }
   
   #gallery h2 {
-    font-size: 3rem;
+    padding-top: 0.5em;
+    font-size: 3rem !important; 
   }
   
   div.page {
@@ -87,13 +88,13 @@
   }
 
   @media screen and (max-width: 768px){    
-    #repertoire, #contact, #gallery {
+    #repertoire, #contact, #gallery, #gallery h2 {
       padding-top: 0em;
     }
   }
 
   @media screen and (max-width: 768px) and (min-height: 900px){    
-    #repertoire, #contact, #gallery {
+    #repertoire, #contact, #gallery, #gallery h2 {
       padding-top: 0em;
     }
   }
