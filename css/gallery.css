@@ -51,6 +51,11 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
     width: 100%;
     height: 24em;
     object-fit: cover;
+   /* border-radius: 2em;*/
+}
+
+.gallery-image.portrait{
+    object-position: 50% 0%;
 }
 
 /*

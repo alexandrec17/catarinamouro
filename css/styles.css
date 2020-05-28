@@ -39,6 +39,9 @@
     background-repeat: no-repeat;
   }
 
+  #repertoire, #contact, #gallery {
+    padding-top: 2em;
+  }
 
   #repertoire h2, #gallery h2, #contact h2 {
     text-transform: uppercase;
@@ -84,21 +87,13 @@
   }
 
   @media screen and (max-width: 768px){    
-    #repertoire, #contact  {
-      padding-top: 5em;
-    }
-
-    #gallery {
-      padding-top: 8em;
+    #repertoire, #contact, #gallery {
+      padding-top: 0em;
     }
   }
 
   @media screen and (max-width: 768px) and (min-height: 900px){    
-    #repertoire, #contact  {
-      padding-top: 7em;
-    }
-
-    #gallery {
-      padding-top: 10em;
+    #repertoire, #contact, #gallery {
+      padding-top: 0em;
     }
   }
