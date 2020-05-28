@@ -173,10 +173,30 @@
     letter-spacing: 2px;
   }
 
-  .mobile-top-logo {
-    max-width: 15em;
+  .mobile-top-logo {    
+    max-width: 6em;
+    margin-left: 0.5em;
     padding-top: 0.5em;
-}
+    padding-bottom: 0.5em;
+  }
+
+  @media screen and (min-height: 600px) {
+    .mobile-top-logo {
+      max-width: 8em;
+    }
+  }
+
+  @media screen and (min-height: 800px) {
+    .mobile-top-logo {
+      max-width: 10em;
+    }
+  }
+
+  @media screen and (min-height: 1000px) {
+    .mobile-top-logo {
+      max-width: 13em;
+    }
+  }
 
   .mobile-logo {
     display: inline-block;
@@ -187,10 +207,12 @@
     margin-left: 0;
   } 
   
-  .logo {
+  .logo {    
     display: inline-block;
     vertical-align: top;
-    max-width: 70vw !important;
+    max-width: 40vw !important;
+    margin-top: 2em;
+    max-height: 12em;
   } 
 
   
@@ -213,7 +235,7 @@
     text-decoration: none;
     color: #000000;
     text-align: center;
-    padding: 1em 1.5em;
+    padding: 1.25em 1.5em 0em;
     font-size: 13px  ;
     line-height: 32px;
     cursor: pointer;
@@ -227,6 +249,6 @@
   
   .topnav a.active, .menu-wrap .menu > div > div > ul > li > a.active  {
     color: var(--primary-color);
-    font-weight: 800;  
+    font-weight: 800;
   }
   

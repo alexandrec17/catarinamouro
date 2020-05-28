@@ -31,11 +31,11 @@
             <div>
               <ul style="padding-left: 0;">
                 <!--<li><img class= "mobile-logo" src="../media/newLogo.png" alt="mobile-logo"></li>-->
-                <li><a id="about-mobile-button" href="../index.html">Home</a></li>
-                <li><a id="about-mobile-button" href="about.html">About</a></li>
+                <li><a id="home-mobile-button" href="../index.html">Home</a></li>
+                <li><a id="about-mobile-button" href="about.html" class="active">About</a></li>
                 <li><a id="repertoire-mobile-button" href="repertoire.html">Repertoire</a></li>
                 <li><a id="gallery-mobile-button" href="gallery.html">Gallery</a></li>
-                <li><a id="contact-mobile-button" href="#" class="active">Contact</a></li>
+                <li><a id="contact-mobile-button" href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -49,15 +49,14 @@
                 <div class="col text-center">
                     <img class="logo" src="../media/newLogo.png" alt="logo">
                 </div>
-                
             </div>
             <div class="row text-center">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-                  <a href="../index.html">Home</a>
+                    <a id="home-button" href="../index.html">Home</a>
                 </div>
                 <div class="col-sm-2">
-                    <a id="about-button" href="about.html">About</a>
+                    <a id="about-button" href="#" class="active">About</a>
                 </div>
                 <div class="col-sm-2">
                     <a id="repertoire-button" href="repertoire.html">Repertoire</a>
@@ -66,41 +65,29 @@
                     <a id="gallery-button" href="gallery.html">Gallery</a>
                 </div>
                 <div class="col-sm-2">
-                    <a id="contact-button" href="#" class="active">Contact</a>
+                    <a id="contact-button" href="contact.html">Contact</a>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
         </div>
     </div>
 
-    <!-- Contact Page -->
-    <div id="contact" class="page">
+    <!-- Repertoire Page -->
+    <div id="about" class="page">
         <div class="container">
-            <div class="col">
-                <h2 class="text-center">Contact</h2>
-            </div>
+          <div class="col">
+              <h2 class="text-center">About</h2>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-md-2">
-                    <img id="contactPic" class="img-fluid" src="../media/contact.jpeg" alt="Contact Image">
-                </div>
-            </div>
-            <div class="row" style="margin-top: 2em;">
-                <div class="col-sm-8 offset-md-2">
-                    <form>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp" placeholder="Why are you contacting? :)">
-                        </div>
-                        <div class="form-group">
-                            <label for="body">Email body</label>
-                            <textarea class="form-control" id="body" rows="5" placeholder="Type something..."></textarea>
-                        </div>
-                        <a id="submit" href="#"> Send me an email</a>
-                    </form>    
-                </div>                
-            </div>
+
+        <div id="biography">
+            <h3>CATARINA MOURO, SOPRANO</h3>
+
+            <p>Catarina is a portuguese Soprano born in 1996. She studied at the Escola de Musica do Conservatório Nacional in Lisbon.</p>
+
+            <p>Winner of the second place in Concurso Internacional de Música da Cidade de Almada, category Canto II (2018).</p>
+
+            <p>Currently she is studying with maestro and pianist Dale Fundling.</p>
         </div>
     </div>
 
@@ -127,6 +114,4 @@
 		</div>
 	</footer>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="../javascript/app.js"></script>
 </html>

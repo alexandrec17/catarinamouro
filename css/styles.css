@@ -39,11 +39,11 @@
     background-repeat: no-repeat;
   }
 
-  #repertoire, #contact, #gallery {
+  #repertoire, #contact, #gallery, #about {
     padding-top: 2em;
   }
 
-  #repertoire h2, #gallery h2, #contact h2 {
+  #repertoire h2, #gallery h2, #contact h2, #about h2 {
     text-transform: uppercase;
     color: var(--primary-color);
     font-family: 'open sans',sans-serif;
@@ -51,7 +51,11 @@
     letter-spacing: 2px;
     padding-bottom: 1em;
   }
-  
+
+  #home-text * {
+    margin-top: 2em;
+  }
+
   #gallery h2 {
     padding-top: 0.5em;
     font-size: 3rem !important; 
