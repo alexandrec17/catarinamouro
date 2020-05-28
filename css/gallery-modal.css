@@ -87,8 +87,43 @@
   cursor: pointer;
 }
 
+/* Prev and Next */
+.prev.portrait {
+  left: 20em;
+}
+
+.next.portrait {
+  right: 20em;
+}
+
+.prev.landscape {
+  left: 4em;
+}
+
+.next.landscape {
+  right: 4em;
+}
+
+#prev, #next {
+  position: absolute;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  transition: 0.3s;
+  background-color: #00000093;
+  color: white;
+  top: 30em;
+  cursor: pointer;
+}
+
+#prev:hover, #next:hover {
+  background-color: #eeeeee;
+  color: black;
+}
+
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
   .modal-content.landscape {
     width: 100%;
     top: 12%;
@@ -98,13 +133,31 @@
     margin-top: 7em;
   }
 
-
   .modal-content.portrait {
     height: 90%;
   }
+  
+  #next, #prev {
+    top: 45em;
+  }
+
+  .prev.portrait {
+    left: 4em;
+  }
+  .next.portrait {
+    right: 4em;
+  }
+
+  #next.next.landscape, #prev.prev.landscape {
+    top: 45em;
+  }
+
+  #next.next.portrait, #prev.prev.portrait {
+    top: 60em;
+  }
 }
 
-@media screen and (max-width: 700px) and (min-height: 750px) {
+@media screen and (max-width: 700px) and (min-height: 700px) {
   .modal-content.landscape {
     width: 100%;
     top: 20%;
@@ -116,6 +169,14 @@
 
   #caption.landscape {
     margin-top: 14em;
+  }
+
+  #next.next.landscape, #prev.prev.landscape {
+    top: 55em;
+  }
+
+  #next.next.portrait, #prev.prev.portrait {
+    top: 68em;
   }
 }
 
@@ -136,4 +197,40 @@
   .modal-content.portrait {
     max-width: 65vh;
   }
+
+  .prev.portrait {
+    left: 8em;
+  }
+
+  .next.portrait {
+    right: 8em;
+  }
+
+  #next.next.landscape, #prev.prev.landscape {
+    top: 33em;
+  }
+
+  #next.next.portrait, #prev.prev.portrait {
+    top: 68em;
+  }
+}
+
+
+@media screen and (max-width: 800px) and (min-height: 1000px){
+  .prev.portrait {
+    left: 6em;
+  }
+
+  .next.portrait {
+    right: 6em;
+  }
+
+  #next.next.landscape, #prev.prev.landscape {
+    top: 43em;
+  }
+
+  #next.next.portrait, #prev.prev.portrait {
+    top: 50em;
+  }
+
 }
