@@ -21,7 +21,7 @@
   }
 
   .menu-wrap {
-    position: absolute;
+    position: relative;
     top: 0;
     width:100vw;
     background-color: #ffffff;
@@ -42,7 +42,10 @@
 
   .menu-wrap .hamburger {
     position: absolute;
-    top: 0;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 1em;
     z-index: 1;
     width: 60px;
