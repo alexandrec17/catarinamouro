@@ -1,5 +1,10 @@
-
+let mybutton
 $(document).ready(function () {
+  mybutton = document.getElementsByClassName('myBtn')[0]
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() }
+
   $('a').click(function () {
     // close the menu after 0,5 seconds
     setTimeout(function () {
@@ -13,14 +18,18 @@ $(document).ready(function () {
   })
 })
 
-function eventFire (el, etype) {
-  if (el.fireEvent) {
-    el.fireEvent('on' + etype)
+function scrollFunction () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block'
   } else {
-    var evObj = document.createEvent('Events')
-    evObj.initEvent(etype, true, false)
-    el.dispatchEvent(evObj)
+    mybutton.style.display = 'none'
   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction () {
+  document.body.scrollTop = 0 // For Safari
+  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
 
 function setActive (menuItem) {

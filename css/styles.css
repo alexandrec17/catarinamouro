@@ -25,6 +25,32 @@
     list-style: none;
   }
 
+  .myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 1; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--primary-color); /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0.5em 1em; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    /* font-size: 18px; Increase font size */
+  }
+
+  #myGalleryBtn {
+    font-size: 15px !important;
+  }
+
+
+  
+  .myBtn:hover {
+    background-color: rgba(199, 138, 18, 0.5);; /* Add a dark-grey background on hover */
+  }
+
   #home {
     top: 0;
     left: 0;
