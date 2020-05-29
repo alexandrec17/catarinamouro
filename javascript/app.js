@@ -20,16 +20,32 @@ $(document).ready(function () {
 
 function scrollFunction () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (screen.width <= 400) {
+      checkOffset()
+    }
     mybutton.style.display = 'block'
   } else {
     mybutton.style.display = 'none'
   }
 }
 
+function checkOffset () {
+  if ($(mybutton).offset().top + $(mybutton).height() >= $('#footer').offset().top - 10) {
+    $(mybutton).css('position', 'absolute')
+  }
+  if ($(document).scrollTop() + window.innerHeight < $('#footer').offset().top) {
+    $(mybutton).css('position', 'fixed') // restore when you scroll up
+  }
+}
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction () {
+  const body = $('html, body')
+  body.stop().animate({ scrollTop: 0 }, 500, 'swing')
+  /*
   document.body.scrollTop = 0 // For Safari
   document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+  */
 }
 
 function setActive (menuItem) {
