@@ -1,10 +1,10 @@
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
-/*html, body {
+html, body {
   height: 100%;
-}*/
+}
+
 footer {
   padding: 10px 0;
 }
@@ -12,15 +12,8 @@ footer {
 #footer {
   /*background: var(--primary-color) !important;*/
   background-color: rgba(0, 0, 0, 1);     
-  margin-top:3em;
-}
-
-#footer h5{
-	padding-left: 10px;
-  border-left: 3px solid #eeeeee;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-  color:#eeeeee;
+  margin-top: 3em;
+  font-size: 10px !important;
 }
 
 #footer a {
@@ -83,20 +76,13 @@ footer {
   color: #eeeeee !important;
 }
 
-@media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-  }
-}
-
-/*@media screen and (min-height: 800px) {
+/*
+@media screen and (min-height: 800px) {
   #footer {
     min-height: calc(100vh - 45em);
   }
-}*/
+}
+*/
 
 @media screen and (min-height: 1000px) {
   #footer {
