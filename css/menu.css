@@ -201,14 +201,13 @@
   @media screen and (min-height: 800px) and (max-width: 800px) {
     .mobile-top-logo {
       max-width: 10em;
-      margin-bottom: 1em;
       padding-top: 0.5em;
     }
 
     #gallery-mobile-logo {
       max-width: 16em;
       max-height: 8em;
-      padding-top: 0.5em;
+      padding-top: 1em;
     }
   }
 
