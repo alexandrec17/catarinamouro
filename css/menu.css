@@ -27,6 +27,7 @@
     background-color: #ffffff;
     z-index: 1;
     height: 10vh;
+    border-bottom: 1px solid black;
   }
 
   .menu-wrap .toggler {
@@ -180,21 +181,41 @@
     padding-bottom: 0.5em;
   }
 
-  @media screen and (min-height: 600px) {
+  @media screen and (min-height: 600px) and (max-width: 800px) {
     .mobile-top-logo {
       max-width: 8em;
+      padding-top: 0.3em;
+    } 
+
+    #gallery-mobile-logo {
+      max-width: 13em;
+      max-height: 7em;
+      padding-top: 0.5em;
     }
   }
 
-  @media screen and (min-height: 800px) {
+  @media screen and (min-height: 800px) and (max-width: 800px) {
     .mobile-top-logo {
       max-width: 10em;
+      margin-bottom: 1em;
+      padding-top: 0.5em;
+    }
+
+    #gallery-mobile-logo {
+      max-width: 16em;
+      max-height: 8em;
+      padding-top: 1em;
     }
   }
 
-  @media screen and (min-height: 1000px) {
+  @media screen and (min-height: 1000px) and (max-width: 800px) {
     .mobile-top-logo {
       max-width: 13em;
+    }
+    
+    #gallery-mobile-logo {
+      max-width: 21em;
+      max-height: 10em;
     }
   }
 

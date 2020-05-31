@@ -116,13 +116,13 @@
   }
 
   @media screen and (max-width: 768px){    
-    #repertoire, #contact, #gallery, #gallery h2 {
-      padding-top: 0em;
+    #about, #repertoire, #contact, #gallery{
+      padding-top: 1em;
     }
   }
 
   @media screen and (max-width: 768px) and (min-height: 900px){    
-    #repertoire, #contact, #gallery, #gallery h2 {
-      padding-top: 0em;
+    #about, #repertoire, #contact, #gallery{
+      padding-top: 1em;
     }
   }
