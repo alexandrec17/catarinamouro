@@ -1,8 +1,8 @@
   :root {
-    /*--primary-color: #E0BB2F;*/
-    /*--primary-color: rgb(161, 134, 35);
-    --primary-color: rgb(156, 87, 27, 0.8);*/ 
-    --primary-color: rgba(199, 138, 18, 0.8);
+    --primary-color: rgba(199, 138, 18, 0.8); /* dourado */
+    /*--primary-color: rgba(191, 221, 195,1); /* verde */
+    /*--primary-color: rgb(156, 155, 240); /*azul */
+    /*--primary-color: rgba(197, 0, 101, 1);*/
     --overlay-color: rgba(255, 255, 255, 0.829);
     --menu-speed: 0.75s;
   }
@@ -23,6 +23,37 @@
 
   ul  {
     list-style: none;
+  }
+
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    padding-bottom: 2.5rem;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe,  
+  .video-container object,  
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   height: 100%;
+  }
+
+  .video-wrapper {
+    width: 600px;
+    max-width: 100%;
   }
 
   .myBtn {
@@ -63,6 +94,10 @@
     background-repeat: no-repeat;
   }
 
+  #info-container * {
+    margin-top: 1em;
+  }
+
   #repertoire, #contact, #gallery, #about {
     padding-top: 2em;
   }
@@ -76,10 +111,6 @@
     padding-bottom: 1em;
   }
 
-  #home-text * {
-    margin-top: 2em;
-  }
-
   #gallery h2 {
     padding-top: 0.5em;
     font-size: 3rem !important; 
@@ -90,23 +121,21 @@
   }
 
   #biography {
-    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-left: 6em;
     text-align: center;
-  }
-  
-  #biography > h2 {
-    margin-top: 2em;
+    margin-right: 6em;
+    font-size: 15px;
   }
 
   #biography > p {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   .fa-chevron-up {
     background-color: rgba(224, 186, 47, 0.527);
     color: white;
     padding: 0.6em 1.1em 1.75em;
-    
   }
 
   @media screen and (max-width: 599px){
@@ -119,6 +148,13 @@
     #about, #repertoire, #contact, #gallery{
       padding-top: 1em;
     }
+
+    #biography {
+      margin-bottom: 5em;
+      margin-left: 3em;
+      text-align: center;
+      margin-right: 3em;
+    }  
   }
 
   @media screen and (max-width: 768px) and (min-height: 900px){    

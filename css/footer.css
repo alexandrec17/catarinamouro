@@ -6,14 +6,16 @@ html, body {
 }
 
 footer {
-  padding: 10px 0;
+  padding-top: 10px;
 }
 
-#footer {
-  /*background: var(--primary-color) !important;*/
-  background-color: rgba(0, 0, 0, 1);     
-  margin-top: 3em;
+#footer {  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
   font-size: 10px !important;
+  text-align: center;
 }
 
 #footer a {
@@ -23,8 +25,12 @@ footer {
   -webkit-text-decoration-skip: objects;
 }
 
+#footer ul {
+  margin-top: 0em !important;
+}
+
 #footer ul.social li{
-	padding: 3px 0;
+  padding: 3px 0;
 }
 
 #footer ul.social li a i {
@@ -74,19 +80,4 @@ footer {
 
 .h6 {
   color: #eeeeee !important;
-}
-
-/*
-@media screen and (min-height: 800px) {
-  #footer {
-    min-height: calc(100vh - 45em);
-  }
-}
-*/
-
-@media screen and (min-height: 1000px) {
-  #footer {
-    /*min-height: calc(100vh - 30em);*/
-    margin-top: 16.5em;
-  }
 }

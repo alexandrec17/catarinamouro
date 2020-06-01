@@ -1,5 +1,9 @@
 let mybutton
 $(document).ready(function () {
+  const footerHeight = $('#footer').height()
+  console.log('footer height', footerHeight)
+  $('.content-wrap').css('padding-bottom', footerHeight + 50)
+
   mybutton = document.getElementsByClassName('myBtn')[0]
 
   // When the user scrolls down 20px from the top of the document, show the button

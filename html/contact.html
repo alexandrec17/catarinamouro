@@ -78,57 +78,60 @@
 
     <!-- Contact Page -->
     <div id="contact" class="page">
-        <div class="container">
-            <div class="col">
-                <h2 class="text-center">Contact</h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-md-2">
-                    <img id="contactPic" class="img-fluid" src="../media/contact.jpeg" alt="Contact Image">
+        <div class="page-container">
+            <div class="content-wrap">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="text-center">Contact</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 offset-md-2">
+                            <img id="contactPic" class="img-fluid" src="../media/contact.jpeg" alt="Contact Image">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2em;">
+                        <div class="col-sm-8 offset-md-2">
+                            <form>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp" placeholder="Why are you contacting? :)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="body">Email body</label>
+                                    <textarea class="form-control" id="body" rows="5" placeholder="Type something..."></textarea>
+                                </div>
+                                <a id="submit" href="#"> Send me an email</a>
+                            </form>    
+                        </div>                
+                    </div>
                 </div>
             </div>
-            <div class="row" style="margin-top: 2em;">
-                <div class="col-sm-8 offset-md-2">
-                    <form>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp" placeholder="Why are you contacting? :)">
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <ul class="list-inline social text-center" style="display: flex; justify-content: center;">
+                                <li><a href="https://www.facebook.com/MouroCatarina/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/mouro.catarina/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/MouroCatarina"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCXOMD_ASBH5pIAM7vYjvqfg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.soundcloud.com/mourocatarina"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="body">Email body</label>
-                            <textarea class="form-control" id="body" rows="5" placeholder="Type something..."></textarea>
+                        <hr>
+                    </div>	
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                            <p class="h6">Catarina Mouro 2020 &copy; All Rights Reserved</p>
                         </div>
-                        <a id="submit" href="#"> Send me an email</a>
-                    </form>    
-                </div>                
-            </div>
+                        <hr>
+                    </div>	
+                </div>
+            </footer>
         </div>
     </div>
-
-    <footer id="footer">
-		<div class="container">
-			<div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <ul class="list-inline social text-center" style="display: flex; justify-content: center;">
-                        <li><a href="https://www.facebook.com/MouroCatarina/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/mouro.catarina/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/MouroCatarina"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCXOMD_ASBH5pIAM7vYjvqfg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.soundcloud.com/mourocatarina"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-				<hr>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p class="h6">Catarina Mouro 2020 &copy; All Rights Reserved</p>
-				</div>
-				<hr>
-			</div>	
-		</div>
-	</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="../javascript/app.js"></script>
