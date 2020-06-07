@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/grid-system-and-input.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reportoire.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+    
+    <title>Repertoire</title>
+</head>
+<body>
+    <!-- Hamburguer menu -->
+    <div class="menu-wrap">
+      <a href="../index.html" class="mobile-top-logo"><img class= "mobile-top-logo" src="../media/newLogo.png" alt="mobile-logo"></a>
+        <input id="toggler" type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul style="padding-left: 0;">
+                <!--<li><img class= "mobile-logo" src="../media/newLogo.png" alt="mobile-logo"></li>-->
+                <li><a id="about-mobile-button" href="../index.html">Home</a></li>
+                <li><a id="about-mobile-button" href="about.html">About</a></li>
+                <li><a id="repertoire-mobile-button" href="#" class="active">Repertoire</a></li>
+                <li><a id="gallery-mobile-button" href="gallery.html">Gallery</a></li>
+                <li><a id="contact-mobile-button" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Top nav menu -->
+    <div class="topnav">
+      <div class="container">
+          <div class="row">
+              <div class="col text-center">
+                  <img class="logo" src="../media/newLogo.png" alt="logo">
+              </div>
+              
+          </div>
+          <div class="row text-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+              <a href="../index.html">Home</a>
+            </div>
+            <div class="col-sm-2">
+                <a id="about-button" href="about.html">About</a>
+            </div>
+              <div class="col-sm-2">
+                  <a id="repertoire-button" href="#" class="active">Repertoire</a>
+              </div>
+              <div class="col-sm-2">
+                  <a id="gallery-button" href="gallery.html">Gallery</a>
+              </div>
+              <div class="col-sm-2">
+                  <a id="contact-button" href="contact.html">Contact</a>
+              </div>
+              <div class="col-sm-1"></div>
+          </div>
+      </div>
+  </div>
+
+  <button onclick="topFunction()" class="myBtn" title="Go to top">&uarr;</button>
+
+    <!-- Repertoire Page -->
+    <div id="repertoire" class="page">
+      
+    <div class="page-container">
+      <div class="content-wrap">
+        <div class="container">
+          <div class="col">
+              <h2 class="text-center">Repertoire</h2>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div id="accordion">
+            <div class="card">
+              <div class="card">
+                <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Performed" aria-expanded="true" aria-controls="Performed">
+                  Performed <i class="pull-right fa fa-plus"></i></a></h5>
+      
+                <div id="Performed" class="collapse" aria-labelledby="PerformedHeading" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="container">
+                      <ul class="list-group list-group-flush text-center">
+                        <li class="list-group-item">Erste Knabe - "Die Zauberflöte", W. A. Mozart</li>
+                        <li class="list-group-item">Barbarina - "Le Nozze di Figaro", W. A. Mozart</li>
+                        <li class="list-group-item">Monica - "The Medium", G. C. Menotti</li>
+                      </ul>
+                    </div>
+                  </div>                      
+                </div>
+              </div>
+  
+              <div class="card">
+                <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Studied" aria-expanded="true" aria-controls="Studied">
+                  Studied <i class="pull-right fa fa-plus"></i></a></h5>
+      
+                <div id="Studied" class="collapse " aria-labelledby="StudiedHeading" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="container">
+                      <ul class="list-group list-group-flush text-center">
+                        <li class="list-group-item">Olympia - "Les Contes d'Hoffmann", J. Offenbach</li>
+                        <li class="list-group-item">Papagena - "Die Zauberflöte", W. A. Mozart</li>
+                        <li class="list-group-item">Königin der Nacht - "Die Zauberflöte", W. A. Mozart</li>
+                        <li class="list-group-item">Susanna - "Le Nozze di Figaro", W. A. Mozart</li>
+                        <li class="list-group-item">Fiakermilli - "Arabella", R. Strauss</li>
+                      </ul>
+                    </div>
+                  </div>                      
+                </div>
+              </div>
+  
+            <div class="card">
+              <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Arias" aria-expanded="true" aria-controls="Arias">
+                Arias <i class="pull-right fa fa-plus"></i></a></h5>
+  
+              <div id="Arias" class="collapse " aria-labelledby="AriasHeading" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="container text-center">
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. F. Händel</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J. S. Bach</h6></li>
+                    
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. B. Pergolesi</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J. Haydn</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">W. A. Mozart</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. Fauré</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. F. Händel</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J. S. Bach</h6></li>
+                    
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. B. Pergolesi</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J. Haydn</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">W. A. Mozart</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. Fauré</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. F. Händel</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J. S. Bach</h6></li>
+                    
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G. B. Pergolesi</h6></li>
+  
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J. Haydn</h6></li>
+  
+                      
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">W. A. Mozart</h6></li>
+  
+                      
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                      <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+  
+          <div class="card">
+            <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Oratorio" aria-expanded="true" aria-controls="Oratorio">
+              Oratorio <i class="pull-right fa fa-plus"></i></a></h5>
+  
+            <div id="Oratorio" class="collapse " aria-labelledby="OratorioHeading" data-parent="#accordion">
+              <div class="card-body">
+                <div class="container text-center">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">G. F. Händel</h6></li>
+
+                    <li class="list-group-item">Messiah – Soprano</li>
+                  </ul>
+                  <br>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">J. S. Bach</h6></li>
+                  
+                    <li class="list-group-item not-last">Matthäus-Passion – Soprano</li>
+                    <li class="list-group-item">Johannes-Passion – Soprano</li>
+                  </ul>
+                  <br>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">G. B. Pergolesi</h6></li>
+
+                    <li class="list-group-item">Stabat Mater – Soprano</li>
+                  </ul>
+                  <br>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">J. Haydn</h6></li>
+
+                    <li class="list-group-item">Stabat Mater – Soprano</li>
+                  </ul>
+                  <br>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">W. A. Mozart</h6></li>
+
+                    <li class="list-group-item not-last">Exultate Jubilate – Soprano Solo</li>
+                    <li class="list-group-item">Great Mass in C minor – Soprano</li>
+                  </ul>
+                  <br>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">G. Fauré</h6></li>
+
+                    <li class="list-group-item">Requiem – Soprano</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#ArtSongs" aria-expanded="true" aria-controls="ArtSongs">
+              Art Song<i class="pull-right fa fa-plus"></i></a></h5>
+  
+            <div id="ArtSongs" class="collapse " aria-labelledby="ArtSongsHeading" data-parent="#accordion">
+              <div class="card-body">
+                <div class="container text-center">
+                  
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">French</h6></li>
+
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                  <br>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">German</h6></li>
+                  
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                  <br>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">Italian</h6></li>
+
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                  <br>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group list-group-item"><h6 class="card-title">Portuguese</h6></li>
+
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item not-last">Lorem ipsum dolor sit amet.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <ul class="list-inline social text-center" style="display: flex; justify-content: center;">
+                  <li><a href="https://www.facebook.com/MouroCatarina/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/mouro.catarina/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/MouroCatarina"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCXOMD_ASBH5pIAM7vYjvqfg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.soundcloud.com/mourocatarina"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+          <hr>
+        </div>	
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <p class="h6">Catarina Mouro 2020 &copy; All Rights Reserved</p>
+          </div>
+          <hr>
+        </div>	
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="../javascript/app.js"></script>
+</html>

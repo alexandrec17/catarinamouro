@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/grid-system-and-input.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link rel="stylesheet" href="../css/gallery.css">-->
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./media/favicon/site.webmanifest">
+
+    <title>Catarina Mouro</title>
+</head>
+<body>
+    <!-- Hamburguer menu -->
+    <div class="menu-wrap" style="border-bottom: 0;">
+        <a href="#" class="mobile-top-logo"><img class= "mobile-top-logo" src="./media/newLogo.png" alt="mobile-logo"></a>
+        <input id="toggler" type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+        <div>
+            <div>
+            <ul style="padding-left: 0;">
+                <!-- <li><img class= "mobile-logo" src="./media/newLogo.png" alt="mobile-logo"></li> -->
+                <li><a id="home-mobile-button" href="#" class="active">Home</a></li>
+                <li><a id="about-mobile-button" href="./html/about.html">About</a></li>
+                <li><a id="repertoire-mobile-button" href="./html/repertoire.html">Repertoire</a></li>
+                <li><a id="gallery-mobile-button" href="./html/gallery.html">Gallery</a></li>
+                <li><a id="contact-mobile-button" href="./html/contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+   
+    
+    
+    <!-- Top nav menu -->
+    <div class="topnav" style="border-bottom: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <img class="logo" src="./media/newLogo.png" alt="logo">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <a id="home-button" href="#" class="active">Home</a>
+                </div>
+                <div class="col-sm-2">
+                    <a id="about-button" href="./html/about.html">About</a>
+                </div>
+                <div class="col-sm-2">
+                    <a id="repertoire-button" href="./html/repertoire.html">Repertoire</a>
+                </div>
+                <div class="col-sm-2">
+                    <a id="gallery-button" href="./html/gallery.html">Gallery</a>
+                </div>
+                <div class="col-sm-2">
+                    <a id="contact-button" href="./html/contact.html">Contact</a>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" class="myBtn" title="Go to top">&uarr;</button>
+
+    <!-- PAGES -->
+    <div id="main-container" style="background-color: #eeeeee;">   
+        <div class="page-container">
+            <div class="content-wrap">
+                <!-- Landing Page -->
+                <div id="home" class="page">
+                </div>
+
+                <!-- About Page -->
+                <div id="info-container">
+                    <div id="home-text" class="page text-center">
+                        <h2>Home</h2>
+                        <div class="row">
+                            <div class="offset-sm-3 col-sm-6 offset-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>
+                                            &#8220;(…) a very talented young singer and multifaceted actress with a promissing future&#8246;
+                                        </p>
+                                        <footer class="blockquote-footer">About the show "O Musical da minha vida" in <cite title="teatralmentefalando">teatralmentefalando</cite></footer>
+                                    </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-sm-3 col-sm-6">
+                                <div class="video-wrapper">
+                                    <div class="video-container">
+                                        <iframe src="https://youtu.be/lVrG_Q1yGlo" width="800" height="450" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <ul class="list-inline social text-center" style="display: flex; justify-content: center;">
+                                <li><a href="https://www.facebook.com/MouroCatarina/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/mouro.catarina/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/MouroCatarina"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCXOMD_ASBH5pIAM7vYjvqfg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.soundcloud.com/mourocatarina"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>	
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                            <p class="h6">Catarina Mouro 2020 &copy; All Rights Reserved</p>
+                        </div>
+                        <hr>
+                    </div>	
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="./javascript/app.js"></script>
+</html>

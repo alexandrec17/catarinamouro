@@ -1,0 +1,33 @@
+  h5 a {
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    font-size: 1.25em;
+    padding: 15px;
+    margin-left: 1em;
+    text-decoration: none;
+    transition: 0.15s all ease-in-out;
+  }
+
+  h5 a:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  h5 a:not(.collapsed) {
+    background: #fff;
+    transition: 0.15s all ease-in-out;
+  }
+  
+  h5 a:not(.collapsed) i:before {
+    content: "";
+  }
+
+  h5 a i {
+    color: rgba(51, 51, 51, 0.7);
+  }
+
+  .not-last {
+    border-bottom: none;
+  }
+
