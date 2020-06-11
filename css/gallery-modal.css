@@ -43,7 +43,8 @@
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #000000;
+  /*color: #000000;*/
+  color: #eeeeee;
   font-weight: bold;
   padding: 10px 0;
   height: 150px;

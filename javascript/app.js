@@ -1,7 +1,6 @@
 let mybutton
 $(document).ready(function () {
   const footerHeight = $('#footer').height()
-  console.log('footer height', footerHeight)
   $('.content-wrap').css('padding-bottom', footerHeight + 50)
 
   mybutton = document.getElementsByClassName('myBtn')[0]
@@ -20,6 +19,11 @@ $(document).ready(function () {
     window.open('mailto:mouro.catarina@gmail.com?subject=' + getSubject() + '&body=' + getBody())
     $(this).closest('form').find('input[type=text], textarea').val('')
   })
+  /*let count = 0
+  $(window).blur(function () {
+    count++
+    alert('BLUR COUNT: ' + count)
+  }) */
 })
 
 function scrollFunction () {

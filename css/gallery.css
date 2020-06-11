@@ -84,3 +84,65 @@ Remove or comment-out the code block below to see how the browser will fall-back
         margin: 0;
     }
 }
+
+/* TRIAL */
+.photos .photo-item {
+    position: relative;
+  }
+  .photos .photo-item:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.3s all ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .photos .photo-item .photo-text-more {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    transition: 0.3s all ease;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  .photos .photo-item .photo-text-more .icon {
+    color: white;
+    font-size: 20px;
+  }
+  .photos .photo-item .photo-text-more .heading {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0;
+  }
+  .photos .photo-item .photo-text-more .meta {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .photos .photo-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    /* @include media-breakpoint-down(xs) {
+         height: 200px;
+     }*/
+  }
+  .photos .photo-item:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .photos .photo-item:hover .photo-text-more {
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+  }

@@ -1,3 +1,23 @@
+$(document).ready(function ($) {
+  console.log('width', $(window).width())
+  if ($(window).width() < 600) {
+    console.log('fancybox', $('.fancybox'))
+    $('.fancybox').fancybox({
+      // API options
+      helpers: {
+        buttons: {
+          tpl: '<div id="fancybox-buttons"><ul>' +
+                    '<li><a class="btnPlay" title="Start slideshow" href="javascript:;"></a></li>' +
+                    '<li><a class="btnToggle" title="Toggle size" href="javascript:;"></a></li>' +
+                    '<li><a class="btnClose" title="Close" href="javascript:;"></a></li>' +
+                '</ul></div>'
+        }
+      }
+    }) // fancybox
+  }
+}) // ready
+
+/*
 // Gallery modal
 function removePortraitAndLandscapeStyles (elem) {
   elem.classList.remove('landscape')
@@ -9,7 +29,6 @@ function openModal (currentElem) {
   // Get the modal
   var modal = document.getElementById('myModal')
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
   var img = currentElem
   var modalImg = document.getElementById('modalImg')
   var captionText = document.getElementById('caption')
@@ -73,3 +92,4 @@ function showSlides (n) {
 
   openModal(slidesJS[slideIndexJS - 1])
 }
+*/
