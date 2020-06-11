@@ -1,3 +1,4 @@
+/*
 $(document).ready(function ($) {
   console.log('width', $(window).width())
   if ($(window).width() < 600) {
@@ -17,7 +18,6 @@ $(document).ready(function ($) {
   }
 }) // ready
 
-/*
 // Gallery modal
 function removePortraitAndLandscapeStyles (elem) {
   elem.classList.remove('landscape')
