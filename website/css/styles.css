@@ -1,8 +1,7 @@
   :root {
-    --primary-color: rgba(199, 138, 18, 0.8); /* dourado */
-    /*--primary-color: rgba(191, 221, 195,1); /* verde */
-    /*--primary-color: rgb(156, 155, 240); /*azul */
-    /*--primary-color: rgba(197, 0, 101, 1);*/
+    /*--primary-color: rgba(199, 138, 18, 0.8); /* dourado */
+    --primary-color:#b99d6b; /* dourado fancy */
+    --button-color:#b99d6b; /* dourado fancy */
     --overlay-color: rgba(255, 255, 255, 0.829);
     --menu-speed: 0.75s;
   }
