@@ -12,7 +12,7 @@
     resize: vertical;
   }
   
-  .card.gallery-img, #contactPic {
+  .card.gallery-img, #contactPic, #reportoirePic, #aboutPic {
     margin-top: 0.75em;
     /*box-shadow: inset 2px;*/
     border-radius: 0.5em;

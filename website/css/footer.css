@@ -9,6 +9,15 @@ footer {
   padding-top: 10px;
 }
 
+.rodape {
+  width: 100%;
+  background-image: url('../media/about1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 13em;
+}
+
 #footer {  
   position: absolute;
   bottom: 0;
