@@ -128,9 +128,11 @@
 
   #biography {
     margin-bottom: 5em;
+    /*
     margin-left: 6em;
-    text-align: center;
     margin-right: 6em;
+    */
+    text-align: center;
     font-size: 15px;
   }
 
@@ -142,6 +144,21 @@
     background-color: rgba(224, 186, 47, 0.527);
     color: white;
     padding: 0.6em 1.1em 1.75em;
+  }
+
+  /* #about-img-col {
+    vertical-align: middle;
+  } */
+
+  .about-portrait {
+    background-image: url("../media/about4.jpg");
+    background-repeat: no-repeat;
+    
+    background-position: right center;   
+  }
+
+  @media screen and (max-width: 576px) {
+
   }
 
   @media screen and (max-width: 599px){
@@ -157,9 +174,11 @@
 
     #biography {
       margin-bottom: 5em;
-      margin-left: 3em;
       text-align: center;
+      /*
+      margin-left: 3em;
       margin-right: 3em;
+      */
     }  
   }
 

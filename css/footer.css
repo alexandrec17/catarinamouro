@@ -11,11 +11,12 @@ footer {
 
 .rodape {
   width: 100%;
-  background-image: url('../media/about1.jpg');
+  background-image: url('../media/rodape.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   min-height: 13em;
+  margin-bottom: -3em;
 }
 
 #footer {  
