@@ -17,7 +17,7 @@ $(document).ready(function () {
   })
 
   $('#submit').click(() => {
-    window.open('mailto:mouro.catarina@gmail.com?subject=' + getSubject() + '&body=' + getBody())
+    window.open('mailto:catarinamouro.soprano@gmail.com?subject=' + getSubject() + '&body=' + getBody())
     $(this).closest('form').find('input[type=text], textarea').val('')
   })
 })
