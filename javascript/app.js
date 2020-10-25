@@ -1,9 +1,7 @@
 let mybutton
 $(document).ready(function () {
   const footerHeight = $('#footer').height()
-  console.log('init footer width', $('#footer').width())
   $('#footer').width($(window).width())
-  console.log('curr footer width', $('#footer').width())
   $('.content-wrap').css('padding-bottom', footerHeight + 50)
 
   mybutton = document.getElementsByClassName('myBtn')[0]
