@@ -14,3 +14,4 @@ $(document).ready(function () {
     $('#about-img-col').css('padding', '0 0')
   }
 })
+ 
