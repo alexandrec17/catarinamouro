@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.about-portrait').css('background-size', 'auto ' + newHeight + 'px')
     $('#about-img').height(newHeight)
   } else {
-    $('.about-portrait').css('background-image', 'url("../media/about-mobile.jpg"')
+    $('.about-portrait').css('background-image', 'url("./media/about-mobile.jpg"')
     $('.about-portrait').css('background-size', 'auto ' + $(window).height() / 2 + 'px')
     $('.about-portrait').css('background-position', 'center center')
 

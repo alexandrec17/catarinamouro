@@ -14,15 +14,21 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 }
 
 .gallery-container {
-    max-width: 93.5rem;
-    margin: 0 auto;
-    padding: 0 2rem;
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-/*
-.gallery-container * {
-    font-size: 10px;
-}*/
+.nav-pills .nav-link {
+  font-size: large;
+  color: black;
+}
+
+a.tab.active {  
+  color: rgba(199, 138, 18, 0.7) !important;
+  font-weight: bold;
+  background-color: transparent !important;
+}
 
 .gallery-item  {
     border-radius: 5px;
@@ -38,10 +44,10 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 /* Gallery Section */
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -1rem -1rem;
-    padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding-bottom: 3rem;
 }
 
 .gallery-item {

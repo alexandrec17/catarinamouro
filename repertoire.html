@@ -39,7 +39,7 @@
 <body>
     <!-- Hamburguer menu -->
     <div class="menu-wrap">
-      <a href="/" class="mobile-top-logo"><img class= "mobile-top-logo" src="./media/newLogo.png" alt="mobile-logo"></a>
+      <a href="index.html" class="mobile-top-logo"><img class= "mobile-top-logo" src="./media/newLogo.png" alt="mobile-logo"></a>
         <input id="toggler" type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
         <div class="menu">
@@ -47,10 +47,24 @@
             <div>
               <ul style="padding-left: 0;">
                 <!--<li><img class= "mobile-logo" src="./media/newLogo.png" alt="mobile-logo"></li>-->
-                <li><a id="about-mobile-button" href="/">Home</a></li>
+                <li><a id="home-mobile-button" href="index.html">Home</a></li>
                 <li><a id="about-mobile-button" href="about.html">About</a></li>
                 <li><a id="repertoire-mobile-button" href="#" class="active">Repertoire</a></li>
-                <li><a id="gallery-mobile-button" href="gallery.html">Gallery</a></li>
+                <li>
+                  <span id="gallery-mobile-btn">Gallery</span>
+                  <ul id="gallery-mobile-sub-menu" class="hide">
+                      <li>
+                          <a id="performance-mobile-button" href="./performances.html">
+                              Performances
+                          </a>
+                      </li>
+                      <li>
+                          <a id="performance-mobile-button" href="./portraits.html">
+                              Portraits
+                          </a>
+                      </li>
+                  </ul>
+                </li>
                 <li><a id="contact-mobile-button" href="contact.html">Contact</a></li>
               </ul>
             </div>
@@ -70,7 +84,7 @@
           <div class="row text-center">
             <div class="col-sm-1"></div>
             <div class="col-sm-2">
-              <a href="/">Home</a>
+              <a href="index.html">Home</a>
             </div>
             <div class="col-sm-2">
                 <a id="about-button" href="about.html">About</a>
@@ -78,9 +92,16 @@
               <div class="col-sm-2">
                   <a id="repertoire-button" href="#" class="active">Repertoire</a>
               </div>
-              <div class="col-sm-2">
-                  <a id="gallery-button" href="gallery.html">Gallery</a>
-              </div>
+              <div class="dropdown col-sm-2">
+                <a id="gallery-button" href="#" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                  Gallery <i class="fa fa-angle-down" style="font-size: large;"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="performances.html">Performances</a>
+                  <a class="dropdown-item" href="portraits.html">Portraits</a>
+                </div>
+            </div>
               <div class="col-sm-2">
                   <a id="contact-button" href="contact.html">Contact</a>
               </div>
@@ -89,7 +110,9 @@
       </div>
   </div>
 
-  <button onclick="topFunction()" class="myBtn" title="Go to top">&uarr;</button>
+  <button id="scroll-top-btn" onclick="topFunction()" class="scroll-top-btn" title="Go to top">
+      <i class="fa fa-angle-up"></i>
+  </button>
 
     <!-- Repertoire Page -->
     <div id="repertoire" class="page">
@@ -104,54 +127,57 @@
   
         <div class="container">
           <div id="accordion">
-            <div class="card">
-              <div class="card">
-                <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Performed" aria-expanded="true" aria-controls="Performed">
-                  Performed <i class="pull-right fa fa-plus"></i></a></h5>
-      
-                <div id="Performed" class="collapse" aria-labelledby="PerformedHeading" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="container">
-                      <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item">Erste Knabe - "Die Zauberflöte", W.A.Mozart</li>
-                        <li class="list-group-item">Barbarina - "Le Nozze di Figaro", W.A.Mozart</li>
-                        <li class="list-group-item">Monica - "The Medium", G.C.Menotti</li>
-                      </ul>
-                    </div>
-                  </div>                      
-                </div>
+            <!-- <div class="card">
+              <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Performed" aria-expanded="true" aria-controls="Performed">
+                Performed <i class="pull-right fa fa-plus"></i></a></h5>
+    
+              <div id="Performed" class="collapse" aria-labelledby="PerformedHeading" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="container">
+                    <ul class="list-group list-group-flush text-center">
+                      <li class="list-group-item">Erste Knabe - "Die Zauberflöte", W.A.Mozart</li>
+                      <li class="list-group-item">Barbarina - "Le Nozze di Figaro", W.A.Mozart</li>
+                      <li class="list-group-item">Monica - "The Medium", G.C.Menotti</li>
+                    </ul>
+                  </div>
+                </div>                      
               </div>
-  
-              <div class="card">
-                <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Studied" aria-expanded="true" aria-controls="Studied">
-                  Studied <i class="pull-right fa fa-plus"></i></a></h5>
-      
-                <div id="Studied" class="collapse " aria-labelledby="StudiedHeading" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="container">
-                      <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item">Olympia - "Les Contes d'Hoffmann", J.Offenbach</li>
-                        <li class="list-group-item">Papagena - "Die Zauberflöte", W.A.Mozart</li>
-                        <li class="list-group-item">Königin der Nacht - "Die Zauberflöte", W.A.Mozart</li>
-                        <li class="list-group-item">Susanna - "Le Nozze di Figaro", W.A.Mozart</li>
-                        <li class="list-group-item">Fiakermilli - "Arabella", R.Strauss</li>
-                      </ul>
-                    </div>
-                  </div>                      
-                </div>
-              </div>
+            </div>
   
             <div class="card">
-              <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Arias" aria-expanded="true" aria-controls="Arias">
-                Arias <i class="pull-right fa fa-plus"></i></a></h5>
+              <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Studied" aria-expanded="true" aria-controls="Studied">
+                Studied <i class="pull-right fa fa-plus"></i></a></h5>
+    
+              <div id="Studied" class="collapse " aria-labelledby="StudiedHeading" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="container">
+                    <ul class="list-group list-group-flush text-center">
+                      <li class="list-group-item">Olympia - "Les Contes d'Hoffmann", J.Offenbach</li>
+                      <li class="list-group-item">Papagena - "Die Zauberflöte", W.A.Mozart</li>
+                      <li class="list-group-item">Königin der Nacht - "Die Zauberflöte", W.A.Mozart</li>
+                      <li class="list-group-item">Susanna - "Le Nozze di Figaro", W.A.Mozart</li>
+                      <li class="list-group-item">Fiakermilli - "Arabella", R.Strauss</li>
+                    </ul>
+                  </div>
+                </div>                      
+              </div>
+            </div> -->
   
-              <div id="Arias" class="collapse " aria-labelledby="AriasHeading" data-parent="#accordion">
+            <div class="card">
+              <h5 class="card-title btn btn-secundary">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" 
+                  href="#Opera" aria-expanded="false" aria-controls="Opera">
+                    Opera <i class="pull-right fa fa-plus"></i>
+                </a>
+              </h5>
+
+              <div id="Opera" class="collapse" aria-labelledby="OperaHeading" data-parent="#accordion">
                 <div class="card-body">
                   <div class="container text-center">
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">G.F.Händel</h6></li>
-  
+
                       <li class="list-group-item not-last">Se pietá di me non senti – Cleopatra’s aria from “Giulio Cesare”</li>
                       <li class="list-group-item not-last">Piangerò la sorte mia – Cleopatra’s aria from “Giulio Cesare”</li>
                     </ul>
@@ -159,7 +185,7 @@
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">W.A.Mozart</h6></li>
-  
+
                       <li class="list-group-item not-last">Venite, inginocchiatevi – Susanna’s aria from “Le Nozze di Figaro”</li>
                       <li class="list-group-item not-last">Deh vieni, non tardar – Susanna’s aria from “Le Nozze di Figaro”</li>
                       <li class="list-group-item not-last">L’ho perduta – Barbarina’s aria from “Le Nozze di Figaro”</li>
@@ -172,47 +198,46 @@
                     </ul>
                     <br>
 
-                    <ul class="list-group list-group-flush">
+                    <!-- <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">G.Rossini</h6></li>
                       
-                      <!--
-                        <li class="list-group-item not-last">Non si da folia Maggiore – Fiorilla’s aria from “Il turco in Italia”</li>
-                      -->
+                      <li class="list-group-item not-last">Non si da folia Maggiore – Fiorilla’s aria from “Il turco in Italia”</li>
                       <li class="list-group-item">Una voce poco fa – Rosina’s aria from “Il Barbiere di Siviglia”</li>
                     </ul>
-                    <br>
+                    <br> -->
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">G.Donizetti</h6></li>
-  
+
                       <li class="list-group-item not-last">Chacun le sait – Marie’s aria from “La Fille du régiment”</li>
                       <li class="list-group-item not-last">Il faut partir – Marie’s aria from “La Fille du régiment”</li>
-                      <li class="list-group-item">So anch’io la virtù magica – Norina’s aria from “Don Pasquale”</li>
+                      <li class="list-group-item not-last">So anch’io la virtù magica – Norina’s aria from “Don Pasquale”</li>
+                      <li class="list-group-item not-last">Della crudele Isotta - Adina's aria from “L'elisir d'amore”</li>
+                      <li class="list-group-item">Prendi - Adina's aria from “L'elisir d'amore”</li>
                     </ul>
                     <br>
 
-                    <!-- <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">V.Bellini</h6></li>
-  
+
                       <li class="list-group-item">Care Compagne… Come per me sereno – Amina’s aria from “La Sonnambula”</li>
+                      <li class="list-group-item">Ah! Non credea… Ah! Non giunge - Amina's aria from “La Sonnambula”</li>
                     </ul>
-                    <br>-->
+                    <br>
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">G.Verdi</h6></li>
-  
+
                       <li class="list-group-item not-last">Caro nome – Gilda’s aria from “Rigoletto”</li>
                       <li class="list-group-item not-last">Volta la terrea – Oscar’s aria from “Un ballo in maschera”</li>
-                      <li class="list-group-item">Saper vorreste – Oscar’s aria from “Un ballo in maschera”</li>
-                      <!--
-                        <li class="list-group-item">Sul fil d’un soffio ettesio – Nanetta’s aria from “Falstaff”</li>
-                      -->
+                      <li class="list-group-item not-last">Saper vorreste – Oscar’s aria from “Un ballo in maschera”</li>                      
+                      <li class="list-group-item">Sul fil d’un soffio ettesio – Nanetta’s aria from “Falstaff”</li>                      
                     </ul>
                     <br>
                     
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">J.Offenbach</h6></li>
-  
+
                       <li class="list-group-item">Les oiseaux dans la charmille – Olympia’s aria from “Les Contes d’Hoffmann”</li>
                     </ul>
                     <br>
@@ -221,14 +246,14 @@
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">I.Delibes</h6></li>
                     
-                      <li class="list-group-item">Oú v ala jeune Hindoue – Lakmè’s aria from “Lakmè”</li>
+                      <li class="list-group-item">Oú va la jeune Hindoue – Lakmè’s aria from “Lakmè”</li>
                     </ul>
                     <br>
                     -->
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">J.Strauss</h6></li>
-  
+
                       <li class="list-group-item not-last">Mein Herr Marquis – Adele’s aria from “Die Fledermaus”</li>
                       <li class="list-group-item">Spiel ich die Unschuld vom Lande – Adele’s aria from “Die Fledermaus”</li>
                     </ul>
@@ -252,7 +277,7 @@
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">R.Strauss</h6></li>
-  
+
                       <li class="list-group-item not-last">Mir ist die Ehre – Sophie’s aria from “Der Rosankavalier”</li>
                       <li class="list-group-item not-last">Großmächtige Prinzessin – Zerbinetta’s aria from “Ariadne auf Naxos”</li>
                       <li class="list-group-item">Die Wiener Herrn – Fiakermilli’s aria from “Arabella”</li>
@@ -261,15 +286,135 @@
 
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">C.Menotti</h6></li>
-  
+
                       <li class="list-group-item">Monica’s Waltz – Monica’s aria from “The Medium”</li>
                     </ul>
                     <br>
                     
                     <ul class="list-group list-group-flush">
                       <li class="list-group list-group-item"><h6 class="card-title">L.Bernstein</h6></li>
-  
+
                       <li class="list-group-item">Glitter and be gay – Cunegonde’s aria from “Candide”</li>
+                    </ul>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <h5 class="card-title btn btn-secundary">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" 
+                   href="#Oratorio" aria-expanded="true" aria-controls="Oratorio">
+                    Oratorio <i class="pull-right fa fa-plus"></i>
+                </a>
+              </h5>
+    
+              <div id="Oratorio" class="collapse " aria-labelledby="OratorioHeading" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="container text-center">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G.F.Händel</h6></li>
+
+                      <li class="list-group-item">Messiah – Soprano</li>
+                    </ul>
+                    <br>
+
+                    <!-- <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J.S.Bach</h6></li>
+                    
+                      <li class="list-group-item not-last">Matthäus-Passion – Soprano</li>
+                      <li class="list-group-item">Johannes-Passion – Soprano</li>
+                    </ul>
+                    <br> -->
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G.B.Pergolesi</h6></li>
+
+                      <li class="list-group-item">Stabat Mater – Soprano</li>
+                    </ul>
+                    <br>
+
+                    <!-- <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">J.Haydn</h6></li>
+
+                      <li class="list-group-item">Stabat Mater – Soprano</li>
+                    </ul>
+                    <br> -->
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">W.A.Mozart</h6></li>
+
+                      <li class="list-group-item not-last">Exultate Jubilate – Soprano Solo</li>
+                      <li class="list-group-item">Great Mass in C minor – Soprano</li>
+                    </ul>
+                    <!-- <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">G.Fauré</h6></li>
+
+                      <li class="list-group-item">Requiem – Soprano</li>
+                    </ul> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card">
+              <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#ArtSongs" aria-expanded="true" aria-controls="ArtSongs">
+                Art Song<i class="pull-right fa fa-plus"></i></a></h5>
+    
+              <div id="ArtSongs" class="collapse " aria-labelledby="ArtSongsHeading" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="container text-center">
+                    
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">French</h6></li>
+
+                      <li class="list-group-item not-last">Aprés un Rêve – G.Fauré</li>
+                      <li class="list-group-item not-last">Dans les ruines d’une abbaye – G.Fauré</li>
+                      <li class="list-group-item not-last">Chanson Triste – H.Duparc</li>
+                      <li class="list-group-item">Phidylé – H.Duparc</li>
+                    </ul>
+                    <br>
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">German</h6></li>
+                    
+                      <!-- <li class="list-group-item not-last">Er zeugt on heißer Phantasie – W.A.Mozart</li>
+                      <li class="list-group-item not-last">Heidenröslein – W.A.Mozart</li> -->
+                      <li class="list-group-item not-last">Gretchen am Spinnrade – F.Schubert</li>
+                      <!-- <li class="list-group-item not-last">Mitten im Schimmer der spiegelndem Wellen – F.Schubert</li> -->
+                      <li class="list-group-item not-last">Frauenliebe und Leben – F.Lachner</li>
+                      <li class="list-group-item not-last">Die Bekehrte – H.Wolf</li>
+                      <li class="list-group-item not-last">Elfenlied – H.Wolf</li>
+                      <li class="list-group-item not-last">Verschwiegene Liebe – H.Wolf</li>
+                      <!-- <li class="list-group-item not-last">Ablösung im Sommer – G.Mahler</li> -->
+                      <li class="list-group-item not-last">Erinnerung – G.Mahler</li>
+                      <!-- <li class="list-group-item not-last">Serenade – G.Mahler</li> -->
+                      <li class="list-group-item not-last">Amor – R.Strauss</li>
+                      <li class="list-group-item not-last">Kling – R.Strauss</li>
+                      <li class="list-group-item">Vocalise – S.Rachmaninoff</li>
+                    </ul>
+                    <br>
+
+                    <!-- <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">Italian</h6></li>
+
+                      <li class="list-group-item not-last">3 Sonetti del Petrarca – F.Lizst</li>
+                      <li class="list-group-item not-last">Il Bacio – L.Arditi</li>
+                      <li class="list-group-item not-last">Non t’amo più – F.Tosti</li>
+                    </ul>
+                    <br> -->
+
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group list-group-item"><h6 class="card-title">Portuguese</h6></li>
+
+                      <li class="list-group-item not-last">Se tu me amasses – Arthur Napoleão</li>
+                      <li class="list-group-item not-last">Desde que os cravos e rosas – Francisco de Lacerda</li>
+                      <li class="list-group-item not-last">Saudades da Terra – Francisco de Lacerda</li>
+                      <li class="list-group-item not-last">Eu fui à terra do bravo – F.Lopes-Graça</li>
+                      <li class="list-group-item">Eu sou – Eurico Carrapatoso</li>
                     </ul>
                     <br>
                   </div>
@@ -277,152 +422,15 @@
               </div>
             </div> 
           </div>
-  
-          <div class="card">
-            <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#Oratorio" aria-expanded="true" aria-controls="Oratorio">
-              Oratorio <i class="pull-right fa fa-plus"></i></a></h5>
-  
-            <div id="Oratorio" class="collapse " aria-labelledby="OratorioHeading" data-parent="#accordion">
-              <div class="card-body">
-                <div class="container text-center">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">G.F.Händel</h6></li>
-
-                    <li class="list-group-item">Messiah – Soprano</li>
-                  </ul>
-                  <br>
-
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">J.S.Bach</h6></li>
-                  
-                    <li class="list-group-item not-last">Matthäus-Passion – Soprano</li>
-                    <li class="list-group-item">Johannes-Passion – Soprano</li>
-                  </ul>
-                  <br> -->
-
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">G.B.Pergolesi</h6></li>
-
-                    <li class="list-group-item">Stabat Mater – Soprano</li>
-                  </ul>
-                  <br>
-
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">J.Haydn</h6></li>
-
-                    <li class="list-group-item">Stabat Mater – Soprano</li>
-                  </ul>
-                  <br> -->
-
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">W.A.Mozart</h6></li>
-
-                    <li class="list-group-item not-last">Exultate Jubilate – Soprano Solo</li>
-                    <li class="list-group-item">Great Mass in C minor – Soprano</li>
-                  </ul>
-                  <!-- <br>
-
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">G.Fauré</h6></li>
-
-                    <li class="list-group-item">Requiem – Soprano</li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="card">
-            <h5 class="card-title btn btn-secundary"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#ArtSongs" aria-expanded="true" aria-controls="ArtSongs">
-              Art Song<i class="pull-right fa fa-plus"></i></a></h5>
-  
-            <div id="ArtSongs" class="collapse " aria-labelledby="ArtSongsHeading" data-parent="#accordion">
-              <div class="card-body">
-                <div class="container text-center">
-                  
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">French</h6></li>
-
-                    <li class="list-group-item not-last">Aprés un Rêve – G.Fauré</li>
-                    <li class="list-group-item not-last">Dans les ruines d’une abbaye – G.Fauré</li>
-                    <li class="list-group-item not-last">Chanson Triste – H.Duparc</li>
-                    <li class="list-group-item">Phidylé – H.Duparc</li>
-                  </ul>
-                  <br>
-
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">German</h6></li>
-                  
-                    <li class="list-group-item not-last">Er zeugt on heißer Phantasie – W.A.Mozart</li>
-                    <li class="list-group-item not-last">Heidenröslein – W.A.Mozart</li>
-                    <li class="list-group-item not-last">Gretchen am Spinnrade – F.Schubert</li>
-                    <li class="list-group-item not-last">Mitten im Schimmer der spiegelndem Wellen – F.Schubert</li>
-                    <li class="list-group-item not-last">Frauenliebe und Leben – F.Lachner</li>
-                    <li class="list-group-item not-last">Die Bekehrte – H.Wolf</li>
-                    <li class="list-group-item not-last">Elfenlied – H.Wolf</li>
-                    <li class="list-group-item not-last">Verschwiegene Liebe – H.Wolf</li>
-                    <li class="list-group-item not-last">Ablösung im Sommer – G.Mahler</li>
-                    <li class="list-group-item not-last">Erinnerung – G.Mahler</li>
-                    <li class="list-group-item not-last">Serenade – G.Mahler</li>
-                    <li class="list-group-item not-last">Amor – R.Strauss</li>
-                    <li class="list-group-item not-last">Kling – R.Strauss</li>
-                    <!-- <li class="list-group-item">Vocalise – S.Rachmaninoff</li> -->
-                  </ul>
-                  <br>
-
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">Italian</h6></li>
-
-                    <li class="list-group-item not-last">3 Sonetti del Petrarca – F.Lizst</li>
-                    <li class="list-group-item not-last">Il Bacio – L.Arditi</li>
-                    <li class="list-group-item not-last">Non t’amo più – F.Tosti</li>
-                  </ul>
-                  <br> -->
-
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group list-group-item"><h6 class="card-title">Portuguese</h6></li>
-
-                    <li class="list-group-item not-last">Se tu me amasses – Arthur Napoleão</li>
-                    <li class="list-group-item not-last">Desde que os cravos e rosas – Francisco de Lacerda</li>
-                    <li class="list-group-item not-last">Saudades da Terra – Francisco de Lacerda</li>
-                    <li class="list-group-item not-last">Eu fui à terra do bravo – F.Lopes-Graça</li>
-                    <li class="list-group-item">Eu sou – Eurico Carrapatoso</li>
-                  </ul>
-                  <br>
-                </div>
-              </div>
-            </div>
-          </div> 
         </div>
-      </div>
-      <div class="rodape" style="margin-top: 2em;">
+        <div class="rodape" style="margin-top: 2em;">
       </div>
     </div>
     
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-              <ul class="list-inline social text-center" style="display: flex; justify-content: center;">
-                  <li><a href="https://www.facebook.com/MouroCatarina/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.instagram.com/mouro.catarina/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                  <li><a href="https://twitter.com/MouroCatarina"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCXOMD_ASBH5pIAM7vYjvqfg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.soundcloud.com/mourocatarina"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
-              </ul>
-          </div>
-          <hr>
-        </div>	
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-            <p class="h6">Catarina Mouro <script>document.write(new Date().getFullYear());</script> &copy; All Rights Reserved</p>
-          </div>
-          <hr>
-        </div>	
-      </div>
-    </footer>
+    <footer-component id="footer"></footer-component>
   </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
 <script src="./javascript/app.js"></script>
+<script src="./javascript/components/footer-component.js"></script> 
 </html>

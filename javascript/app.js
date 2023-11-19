@@ -1,10 +1,11 @@
-let mybutton
+let scrollTopButton, scrollDownButton
 $(document).ready(function () {
   const footerHeight = $('#footer').height()
   $('#footer').width($(window).width())
   $('.content-wrap').css('padding-bottom', footerHeight + 50)
 
-  mybutton = document.getElementsByClassName('myBtn')[0]
+  scrollTopButton = document.getElementById('scroll-top-btn')
+  scrollDownButton = document.getElementById('scroll-down-btn')
 
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () { scrollFunction() }
@@ -17,32 +18,68 @@ $(document).ready(function () {
   })
 
   $('#submit').click(() => {
-    window.open('mailto:catarinamouro.soprano@gmail.com?subject=' + getSubject() + '&body=' + getBody())
+    window.open('mailto:catarinamouro.soprano@gmail.com?subject=' + getEmailSubject() + '&body=' + getEmailBody())
     $(this).closest('form').find('input[type=text], textarea').val('')
   })
+
+  $("#gallery-mobile-btn").click(() => switchGalleryMobileSubMenu())
 })
 
+function switchGalleryMobileSubMenu(){
+  const element = document.getElementById("gallery-mobile-sub-menu");
+
+  if(element && element != null) 
+  {
+    if(element.classList.contains('hide'))
+      element.classList.remove('hide');
+    else
+      element.classList.add('hide')
+  }
+
+}
+
 function scrollFunction () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    if (screen.width <= 400) { setButtonHeight() }
-    mybutton.style.display = 'block'
-  } else {
-    mybutton.style.display = 'none'
+  if(scrollDownButton && scrollDownButton != null)
+  {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      scrollDownButton.style.display = 'none'
+    } else {
+      scrollDownButton.style.display = 'table'
+    }
+  }
+  
+  if(scrollTopButton && scrollTopButton != null)
+  {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      if (screen.width <= 400) { 
+        setButtonHeight() 
+      }
+      scrollTopButton.style.display = 'block'
+
+    } else {
+      scrollTopButton.style.display = 'none'
+      
+    }
   }
 }
 
-function setButtonHeight () {
-  $(mybutton).css('bottom', $('#footer').height() + 20)
+// When the user clicks on the scroll bot button, scroll to the top of the info section
+function scrollToInfo() {
+  const body = $('html, body')
+  body.stop().animate({
+    scrollTop: $("#info-container").offset().top
+  }, 2000, 'swing');
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Set the button position to be above footer
+function setButtonHeight () {
+  $(scrollDownButton).css('bottom', $('#footer').height() + 20)
+}
+
+// When the user clicks on the scroll top button, scroll to the top of the document
 function topFunction () {
   const body = $('html, body')
-  body.stop().animate({ scrollTop: 0 }, 500, 'swing')
-  /*
-  document.body.scrollTop = 0 // For Safari
-  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-  */
+  body.stop().animate({ scrollTop: 0 }, 500, 'swing');
 }
 
 function setActive (menuItem) {
@@ -50,10 +87,10 @@ function setActive (menuItem) {
   menuItem.addClass('active')
 }
 
-function getBody () {
+function getEmailBody () {
   return $('#body').val()
 }
 
-function getSubject () {
+function getEmailSubject () {
   return $('#subject').val()
 }
